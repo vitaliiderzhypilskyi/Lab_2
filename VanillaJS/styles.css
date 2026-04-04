@@ -1,0 +1,90 @@
+/* Базові налаштування */
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #FFF8E7; /* Твій кремовий фон */
+    color: #333;
+    transition: all 0.4s ease;
+}
+
+/* Шапка */
+header {
+    background-color: #800000; /* Бордовий */
+    color: #FFF8E7;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(128, 0, 0, 0.15);
+}
+
+header h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Секції */
+section {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(128, 0, 0, 0.05);
+}
+
+h2 {
+    color: #800000;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+/* Кнопка теми */
+#theme-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #FFF8E7;
+    color: #FFF8E7;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#theme-btn:hover { background: #FFF8E7; color: #800000; }
+
+/* Модальне вікно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Темна тема */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #E2C799;
+}
+
+body.dark-theme section {
+    background-color: #262626;
+    border-color: #E2C799;
+    color: #eee;
+}
+
+body.dark-theme h2 { color: #E2C799; border-color: #E2C799; }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Лабораторна 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Держипільський Віталій</h1>
+        <p style="opacity: 0.9; margin-top: 10px;">vitalii.derzhypilskyi.kb.2023@lpnu.ua</p>
+        <button id="theme-btn">Змінити режим</button>
+    </header>
+
+    <main>
+        <section id="reviews-section">
+            <h2>Рекомендації</h2>
+            <div id="reviews-container">
+                <p style="font-style: italic; opacity: 0.6;">Отримання даних із сервера...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Про себе</h2>
+            <p>Я студент третього курсу Національного університету «Львівська політехніка», спеціальність "Кібербезпека". Зацікавлений у розвитку навичок захисту інформації та отриманні практичного досвіду.</p>
+        </section>
+    </main>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <h3 style="margin-top: 0; color: #800000;">Зворотній зв'язок</h3>
+            <form action="https://formspree.io/f/mnjojdbj" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" name="name" placeholder="Ім'я" required style="padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                <input type="email" name="email" placeholder="Email" required style="padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                <textarea name="message" placeholder="Ваше повідомлення" rows="4" style="padding: 10px; border: 1px solid #ddd; border-radius: 6px;"></textarea>
+                <button type="submit" style="background: #800000; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold;">Відправити</button>
+                <button type="button" id="close-modal" style="background: none; border: none; color: #666; text-decoration: underline; cursor: pointer;">Скасувати</button>
+            </form>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px; padding: 20px; text-align: center; border-top: 1px solid rgba(0,0,0,0.05);">
+        <p style="font-size: 0.9rem; color: #666;">© 2026 Лабораторна робота №4</p>
+        <div id="storage-info" style="font-size: 0.75rem; color: #999; margin-top: 10px;"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
