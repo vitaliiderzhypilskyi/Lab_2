@@ -1,3 +1,4 @@
+// Лабораторна робота №5: JavaScript та автоматизація деплою
 // 1. Системна інформація (LocalStorage)
 function saveSystemInfo() {
     const info = {
@@ -50,7 +51,7 @@ function setupModal() {
     // Таймер на 60 секунд
     setTimeout(() => {
         if (modal) modal.style.display = 'block';
-    }, 60000); 
+    }, 3000); 
 
     if (closeBtn) {
         closeBtn.onclick = () => modal.style.display = 'none'; //
